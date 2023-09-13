@@ -10,11 +10,11 @@ body {
 }
 
 .title {
-    border-bottom: 2px solid rgb(42, 122, 228);
+    border-bottom: 2px solid rgba(127.5, 0, 0, 1);
     text-transform: uppercase;
     padding: 20px;
     font-size: 32px;
-    color: rgb(42, 122, 228);
+    color: rgba(127.5, 0, 0, 1);
 }
 
 .chamada {
@@ -45,23 +45,19 @@ body {
     padding-left: 0;
     padding-bottom: 10px;
     margin-bottom: 1.7rem;
-    color: yellowgreen;
-    border-bottom: 2px solid yellowgreen;
+    color: rgba(0, 127.5, 0, 1);
+    border-bottom: 2px solid rgba(0, 127.5, 0, 1);
 }
 
 .categoria-videos {
     display: flex;
     gap: 10px;
     overflow-x: auto;
+    height: 220px;
 }
 
 .categoria-videos img {
     height: 200px;
-    opacity: .5;
-}
-
-.categoria-videos img:hover {
-    border: 1px solid yellowgreen;
     opacity: 1;
 }
 
@@ -89,6 +85,20 @@ body {
     align-items: center;
 }
 
+.video-overlay a {
+    text-decoration: none;
+}
+
+.video-overlay a:hover {
+    text-decoration: underline;
+    color: #b8b8b8;
+}
+
+.video-overlay a:active p,
+.video-overlay a:visited p {
+    color: #b8b8b8;
+}
+
 .video-title {
     color: #fff;
     font-size: 24px;
@@ -97,5 +107,30 @@ body {
 }
 
 .video-container:hover .video-overlay {
+    z-index: 1;
     opacity: 1;
+    border: 2px solid yellowgreen;
+}
+
+main {
+    border-bottom: 5px groove rgb(28, 84, 158);
+}
+
+footer {
+    padding: 3rem;
+    background-color: rgba(0, 0, 127.5, 1);
+    margin-top: .1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(224, 101, 255);
+    transition: .5s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(127, 1, 218);
+    font-weight: bold;
+    transition: .5s;
 }
