@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.title {
+    border-bottom: 2px solid rgb(42, 122, 228);
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
+}
+
+.chamada {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(127.5, 0, 0, 1) 0%, rgba(0, 127.5, 0, 1) 50%, rgba(0, 0, 127.5, 1) 100%);
+    padding: 80px 0;
+}
+
+.chamada-texto {
+    margin-right: 5%;
+}
+
+.chamada-texto h1 {
+    font-size: 40px;
+}
+
+.chamada-texto p {
+    font-size: 20px;
+}
+
+.categoria {
+    padding: 20px;
+}
+
+.categoria h2 {
+    padding: 2rem;
+    padding-left: 0;
+    padding-bottom: 10px;
+    margin-bottom: 1.7rem;
+    color: yellowgreen;
+    border-bottom: 2px solid yellowgreen;
+}
+
+.categoria-videos {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.categoria-videos img {
+    height: 200px;
+    opacity: .5;
+}
+
+.categoria-videos img:hover {
+    border: 1px solid yellowgreen;
+    opacity: 1;
+}
+
+.video-container {
+    position: relative;
+    height: 200px;
+}
+
+.embed-video {
+    width: 100%;
+    height: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-title {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+.video-container:hover .video-overlay {
+    opacity: 1;
+}
