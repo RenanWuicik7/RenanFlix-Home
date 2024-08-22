@@ -20,6 +20,7 @@ body {
 .chamada {
     display: flex;
     justify-content: center;
+    align-items: center;
     background: linear-gradient(90deg, rgba(127.5, 0, 0, 1) 0%, rgba(0, 127.5, 0, 1) 50%, rgba(0, 0, 127.5, 1) 100%);
     padding: 80px 0;
 }
